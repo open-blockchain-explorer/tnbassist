@@ -39,4 +39,4 @@ brews:
     homepage: https://github.com/open-blockchain-explorer/tnbassist
     tap:
       owner: open-blockchain-explorer
-      name: homebrew-tnbassist
+      name: tnbassist

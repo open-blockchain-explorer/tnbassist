@@ -21,7 +21,7 @@ Usage:
 Available Commands:
   account     
   backup      Backup data of the given <entity>
-  completion  generate the autocompletion script for the specified shell
+  completion  Generate the autocompletion script for the specified shell
   help        Help about any command
   stats       Stats command
   version     Current version of TNB Assist CLI.

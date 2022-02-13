@@ -9,7 +9,19 @@ TNB Assist is a CLI (Command Line Interface) tool for thenewboston blockchain to
 
 Checkout our flagship blockchain explorer at https://tnbexplorer.com
 
-### SEE ALSO
+## INSTALL
+- Go get
+    ```sh
+    go get -u github.com/open-blockchain-explorer/tnbassist
+    ```
+- For macOS via homebrew
+    ```sh
+    brew tap open-blockchain-explorer/tnbassist https://github.com/open-blockchain-explorer/tnbassist
+    brew install tnbassist
+    ```
+- Download binary for your respective operating system from https://github.com/open-blockchain-explorer/tnbassist/releases
+
+### FOR USAGE SEE DOCS
 
 * [tnbassist account](./docs/tnbassist_account.md)  - Perform multiple accounts related actions like backup, verify.
 * [tnbassist backup](./docs/tnbassist_backup.md)	 - Backup data of the given <entity>
