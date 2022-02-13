@@ -24,7 +24,7 @@ func (h HTTPConfig) String() string {
 // TNBExplorerHTTPClientInterface represents the interface for TNBExplorer RESTful API client
 //
 // Interfaces serve as parent objects from which other objects can inherit.
-// It gurantees that a client provides basic functionality.
+// It guarantees that a client provides basic functionality.
 // Interface can be easily mocked making it easier to test the client.
 type TNBExplorerHTTPClientInterface interface {
 	PostStats(stats *model.LegacyStats) (int, []byte, error)
@@ -33,7 +33,7 @@ type TNBExplorerHTTPClientInterface interface {
 // TNBHTTPClientInterface represents the interface for thenewboston RESTful API client
 //
 // Interfaces serve as parent objects from which other objects can inherit.
-// It gurantees that a client provides basic functionality.
+// It guarantees that a client provides basic functionality.
 // Interface can be easily mocked making it easier to test the client.
 type TNBHTTPClientInterface interface {
 	FetchAllAccounts() (*model.Accounts, error)
@@ -43,7 +43,7 @@ type TNBHTTPClientInterface interface {
 // DiscordWebhookClientInterface represents the interface for Discord RESTful API client
 //
 // Interfaces serve as parent objects from which other objects can inherit.
-// It gurantees that a client provides basic functionality.
+// It guarantees that a client provides basic functionality.
 // Interface can be easily mocked making it easier to test the client.
 type DiscordWebhookClientInterface interface {
 	PostStatsToDiscordFetchAllAccounts() (int, error)
@@ -52,7 +52,7 @@ type DiscordWebhookClientInterface interface {
 // GitHubGraphQLClientInterface represents the interface for GitHub GraphQL client
 //
 // Interfaces serve as parent objects from which other objects can inherit.
-// It gurantees that a client provides basic functionality.
+// It guarantees that a client provides basic functionality.
 // Interface can be easily mocked making it easier to test the client.
 type GitHubGraphQLClientInterface interface {
 	FetchNIssues(organization string, repository string, filters Filters) (*Issues, error)
