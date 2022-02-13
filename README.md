@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/open-blockchain-explorer/tnbassist/workflows/Continuous%20Integration/badge.svg?branch=main)](https://github.com/open-blockchain-explorer/tnbassist/actions)
+[![Build Status](https://github.com/open-blockchain-explorer/tnbassist/actions/workflows/build.yaml/badge.svg?branch=main)](https://github.com/open-blockchain-explorer/tnbassist/actions)
 [![GoDoc](https://godoc.org/open-blockchain-explorer/tnbassist?status.svg)](https://godoc.org/open-blockchain-explorer/tnbassist)
 [![Go Report Card](https://goreportcard.com/badge/github.com/open-blockchain-explorer/tnbassist)](https://goreportcard.com/report/github.com/open-blockchain-explorer/tnbassist)
 [![Donate](https://img.shields.io/badge/donate-TNBC-orange)](https://tnbexplorer.com/tnb/payment-request?recipient=1dfb0e7dd672032da0d8c29385ba6d22ec9d1134a115cc5596c5e4b69e6fc9a5&amount=1000&memo=Donation%20for%20TNBExplorer%20team)
