@@ -1,5 +1,9 @@
 # This is an example .goreleaser.yml file with some sensible defaults.
 # Make sure to check the documentation at https://goreleaser.com
+env:
+  - GO111MODULE=on
+  - GOPROXY=https://goproxy.io
+
 before:
   hooks:
     # You may remove this if you don't use go modules.
@@ -31,8 +35,8 @@ changelog:
       - '^docs:'
       - '^test:'
 brews:
-- name: tnbassist
-  homepage: https://github.com/open-blockchain-explorer/tnbassist
-  tap:
-    owner: open-blockchain-explorer
-    name: tnbassist
+  - name: tnbassist
+    homepage: https://github.com/open-blockchain-explorer/tnbassist
+    tap:
+      owner: open-blockchain-explorer
+      name: homebrew-tnbassist
