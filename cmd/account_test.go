@@ -29,13 +29,13 @@ func Test_AccountCommand(t *testing.T) {
 		},
 		// Verify
 		{
-			name:    "Should return Valid if signing key acutally belongs to the account",
+			name:    "Should return Valid if signing key actually belongs to the account",
 			args:    []string{"verify", "-a", testdata.AccountNumber, "-s", testdata.SigningKey},
 			want:    "Valid\n",
 			wantErr: false,
 		},
 		{
-			name:    "Should return Inalid if signing key acutally belongs to the account",
+			name:    "Should return Inalid if signing key actually belongs to the account",
 			args:    []string{"verify", "-a", testdata.AccountNumber, "-s", testdata.AccountNumber},
 			want:    "Invalid\n",
 			wantErr: false,
