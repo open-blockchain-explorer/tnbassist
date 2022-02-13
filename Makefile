@@ -20,7 +20,7 @@ clean:
 	go clean
 
 test:
-	go test ./... -tags mock
+	go test -v ./... -tags mock
 
 generate-mocks:
 	go get -d github.com/vektra/mockery/v2@v2.8.0
