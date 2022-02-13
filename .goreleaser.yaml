@@ -30,3 +30,9 @@ changelog:
     exclude:
       - '^docs:'
       - '^test:'
+brews:
+- name: tnbassist
+  homepage: https://github.com/open-blockchain-explorer/tnbassist
+  tap:
+    owner: itsnikhil
+    name: homebrew-tools
