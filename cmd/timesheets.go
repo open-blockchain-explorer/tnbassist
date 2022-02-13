@@ -9,6 +9,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
+// WIP:
 // timesheetsCmd represents the timesheets command
 var timesheetsCmd = &cobra.Command{
 	Use:   "timesheets",
@@ -20,7 +21,7 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		github := client.NewGitHubGraphQLClient("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")
+		github := client.NewGitHubGraphQLClient("")
 		t := time.Date(2021, time.April, 15, 0, 0, 00, 0, time.UTC)
 		// t = t.Truncate(24 * time.Hour)
 		// t = t.Add(-24 * time.Hour)
@@ -71,6 +72,7 @@ to quickly create a Cobra application.`,
 }
 
 func init() {
+	timesheetsCmd.Flags().StringP("token", "t", "", "GitHub personal access token")
 	timesheetsCmd.Flags().StringSliceP("labels", "b", []string{}, "Labels to filter GitHub issues")
-	statsCmd.AddCommand(timesheetsCmd)
+	// statsCmd.AddCommand(timesheetsCmd)
 }
