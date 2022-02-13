@@ -1,0 +1,14 @@
+on:
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  build-test-checks:
+    runs-on: ubuntu-latest
+    name: Unit tests and syntax
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-go@v2
+        with:
+          go-version: '1.15'
+      - run: make ci
+
